@@ -389,6 +389,7 @@ i:hover {
   footer {
     display: flex;
     margin: 0 auto;
+    margin-top: 5rem;
   }
   .footer-part {
     margin: 0 auto;
@@ -667,7 +668,7 @@ i:hover {
 
   .footer-part .footer-logo {
     max-width: 8rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .footer-part {
     max-width: 1200px;
@@ -679,7 +680,7 @@ i:hover {
 
   .left {
     display: flex;
-    column-gap: 15.5rem;
+    column-gap: 10.5rem;
   }
 }
 
@@ -699,6 +700,10 @@ i:hover {
     margin-top: 10rem;
     transform: translateX(15%);
     position: static;
+  }
+
+  .footer-part .footer-logo {
+    margin-bottom: 3em;
   }
 }
 
