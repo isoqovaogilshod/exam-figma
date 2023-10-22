@@ -73,11 +73,9 @@ li {
   margin: 0 auto;
   border-radius: 28px;
   background: #26bba4;
-
   box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5),
     0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
   padding: 1.3rem 5rem;
-  max-width: 31.1rem;
 }
 
 .text-btns .btns {
@@ -95,7 +93,7 @@ li {
   letter-spacing: 0.5px;
 }
 
-.text-btns .btns .iOS:hover {
+.text-btns .btns .iOS:active {
   background: #62beb1;
 }
 .text-btns .btns .Mac {
@@ -103,11 +101,9 @@ li {
   margin: 0 auto;
   border-radius: 2.8rem;
   background: #6174ff;
-
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1),
     0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
   padding: 1.3rem 5rem;
-  max-width: 31.1rem;
 }
 
 .text-btns .btns .Mac a {
@@ -119,7 +115,7 @@ li {
   letter-spacing: 0.5px;
 }
 
-.text-btns .btns .Mac:hover {
+.text-btns .btns .Mac:active {
   background: #868fd5;
 }
 .keep {
@@ -329,17 +325,411 @@ footer {
   column-gap: 4rem;
 }
 
-.icons i {
+i {
   font-size: 2.4rem;
   color: #4c545c;
 }
-.icons i:hover {
+i:hover {
   color: #26bba4;
 }
 
-@media screen and (min-with: 620px) {
+@media screen and (min-width: 620px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .computer-text .mobile-comp {
+    margin-top: 5rem;
+  }
+
+  .text-btns .btns {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  .text-btns .btns .iOS {
+    padding: 1rem 3rem;
+  }
+
+  .text-btns .btns .Mac {
+    padding: 1rem 3rem;
+  }
+
+  .access {
+    margin-top: 8rem;
+  }
+  .brands {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+  }
+  .text-bottom {
+    margin-top: 17rem;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5rem;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 700px;
+  }
+
+  footer {
+    display: flex;
+    margin: 0 auto;
+  }
+  .footer-part {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10rem;
+  }
+
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .footer-part .footer-logo {
+    margin-top: 2rem;
+  }
+
+  .text-btns .btns {
+    max-width: 700px;
+  }
+  .text-btns .btns .iOS {
+    padding: 1.4rem 5rem;
+  }
+
+  .text-btns .btns .Mac {
+    padding: 1.4rem 5rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
   .container {
     max-width: 90%;
     margin: 0 auto;
   }
+
+  .footer-part .footer-logo {
+    margin-top: 2rem;
+  }
+
+  .text-btns .btns {
+    max-width: 600px;
+  }
+  .left {
+    display: flex;
+    gap: 5rem;
+  }
+  .contacts {
+    display: flex;
+    gap: 7rem;
+  }
+  .icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .access {
+    margin-top: 10rem;
+  }
+  .text-bottom {
+    margin-top: 10rem;
+  }
 }
+
+@media screen and (min-width: 1120px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 4.6rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+  }
+
+  .keep h2 {
+    font-size: 3.6rem;
+    margin: 0 auto;
+  }
+
+  .keep h3 {
+    font-size: 1.8rem;
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 1.9rem;
+    font-size: 2rem;
+    max-width: 80rem;
+  }
+
+  .computer {
+    display: flex;
+    width: 650px;
+  }
+  .mobile-comp {
+    display: none;
+  }
+
+  .computer-text {
+    display: flex;
+    margin-top: 8rem;
+  }
+
+  .computer-text .texts {
+    row-gap: 5.6rem;
+    padding: 0;
+    max-width: 200px;
+  }
+  .computer-text .texts h2 {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+
+  .computer-text .texts p {
+    text-align: left;
+    margin-top: 1rem;
+    width: 350px;
+    font-size: 1.9rem;
+  }
+
+  .computer-comp {
+    transform: translateX(-30%);
+    display: inline-block;
+    width: 900px;
+  }
+  .access {
+    margin-top: 8rem;
+  }
+  .access p {
+    font-size: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .cards-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 8rem;
+  }
+
+  .cards-part p {
+    width: 27rem;
+  }
+
+  .brands {
+    display: flex;
+    margin-top: 16rem;
+    margin: 0 auto;
+    flex-direction: row;
+    column-gap: 8rem;
+    margin-top: 15rem;
+  }
+  .brands img {
+    max-width: 20rem;
+  }
+  .supercharge p {
+    font-size: 2rem;
+  }
+  .text-bottom {
+    margin-top: 16rem;
+  }
+
+  .text-bottom p {
+    font-size: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .text-btns .btns {
+    margin-top: 4.8rem;
+  }
+
+  .footer-part {
+    display: flex;
+    column-gap: 22rem;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .keep h2 {
+    font-size: 4rem;
+  }
+  .computer-text {
+    max-width: 74%;
+    margin-top: 8rem;
+    display: flex;
+    column-gap: 0;
+  }
+
+  .computer-text .texts h2 {
+    font-size: 3rem;
+    width: 400px;
+  }
+  .computer-text .texts p {
+    width: 360px;
+  }
+  .computer {
+    width: 800px;
+  }
+
+  .computer-comp {
+    width: 1000px;
+  }
+
+  .access {
+    margin-top: 8rem;
+  }
+
+  .access h2 {
+    font-size: 4rem;
+  }
+  .access p {
+    font-size: 1.8rem;
+  }
+
+  .supercharge h2 {
+    font-size: 4rem;
+  }
+
+  .brands {
+    margin-top: 16rem;
+  }
+
+  .text-bottom {
+    margin-top: 16rem;
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  .container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .computer-text {
+    margin-top: 8rem;
+  }
+  
+
+  .cards-part {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    column-gap: 15rem;
+  }
+
+  .cards-part p {
+    max-width: 600px;
+  }
+  .access {
+    margin-top: 15rem;
+  }
+
+  .brands {
+    margin-top: 16rem;
+  }
+  .text-bottom {
+    margin-top: 16rem;
+  }
+
+  .footer-part .footer-logo {
+    max-width: 8rem;
+    margin-top: 5rem;
+  }
+  .footer-part {
+    max-width: 1200px;
+  }
+
+  i {
+    font-size: 3rem;
+  }
+
+  .left {
+    display: flex;
+    column-gap: 15.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .brands {
+    margin-top: 16rem;
+  }
+
+  .text-bottom {
+    margin-top: 16rem;
+  }
+  .computer-text {
+    margin-top: 10rem;
+    transform: translateX(15%);
+    position: static;
+  }
+}
+
+@media screen and (min-width: 2010px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .brands {
+    margin-top: 16rem;
+  }
+
+  .text-bottom {
+    margin-top: 16rem;
+  }
+  .computer-text {
+    transform: translateX(20%);
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .brands {
+    margin-top: 16rem;
+  }
+
+  .text-bottom {
+    margin-top: 16rem;
+  }
+  .computer-text {
+    margin-top: 10rem;
+    transform: translateX(40%);
+  }
+}
+
