@@ -715,6 +715,7 @@ i:hover {
     margin-top: 16rem;
   }
   .computer-text {
+    margin-top: 10rem;
     transform: translateX(20%);
   }
 }
